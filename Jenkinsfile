@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'docker' && 'maven'
-        }
+    agent any
     }
     stages { 	
         stage('Build Jar') {
